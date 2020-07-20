@@ -154,6 +154,102 @@ main {
     }
   }
 }
+//Education and skills
+
+.edsk {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "edu skill";
+  grid-template-columns: repeat(2, 1fr);
+
+  .education {
+    grid-area: edu;
+    margin: auto;
+    width: 80%;
+    font-size: 1.4rem;
+
+    .ed {
+      .head {
+        width: 60%;
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        font-weight: 600;
+        padding: 0 0.5rem;
+        // margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .skills {
+    grid-area: skill;
+    width: 80%;
+    margin: auto;
+    font-size: 1.4rem;
+    list-style: none;
+
+    .bar {
+      background: #635714;
+      display: block;
+      height: 5px;
+      // border: 1px solid #35658b;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0 10px $secondary-color;
+    }
+    .bar span {
+      height: 5px;
+      float: left;
+      background: $secondary-color;
+    }
+    .html {
+      width: 90%;
+      animation: html 2s;
+    }
+    .python {
+      width: 80%;
+      animation: python 2s;
+    }
+    .ml {
+      width: 75%;
+      animation: ml 2s;
+    }
+    .ds {
+      width: 80%;
+      animation: ds 2s;
+    }
+    @keyframes html {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 90%;
+      }
+    }
+    @keyframes python {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 80%;
+      }
+    }
+    @keyframes ml {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 75%;
+      }
+    }
+    @keyframes ds {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 80%;
+      }
+    }
+  }
+}
 
 /// button
 .btn {

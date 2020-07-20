@@ -57,7 +57,17 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .edsk {
+    grid-template-areas:
+      "edu"
+      "skill";
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
 }
+//education and skills
+
 //phones Screens
 @include mediaSm {
   main#home h1 {
@@ -65,5 +75,12 @@
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  .edsk {
+    grid-template-areas:
+      "edu"
+      "skill";
+    grid-template-columns: 1fr;
+    margin: auto;
   }
 }
