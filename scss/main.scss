@@ -68,7 +68,6 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "exp exp exp"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
@@ -166,15 +165,17 @@ main {
     grid-area: edu;
     margin: auto;
     width: 80%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     .ed {
+      margin-top: 1.5rem;
       .head {
         width: 60%;
         background: $secondary-color;
         color: set-text-color($secondary-color);
         font-weight: 600;
         padding: 0 0.5rem;
+        align-self: center;
         // margin-bottom: 0.5rem;
       }
     }

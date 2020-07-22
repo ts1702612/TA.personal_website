@@ -160,7 +160,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "exp exp exp" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -233,13 +233,16 @@ main {
     grid-area: edu;
     margin: auto;
     width: 80%;
-    font-size: 1.4rem; }
-    .edsk .education .ed .head {
-      width: 60%;
-      background: #eece1a;
-      color: black;
-      font-weight: 600;
-      padding: 0 0.5rem; }
+    font-size: 1.2rem; }
+    .edsk .education .ed {
+      margin-top: 1.5rem; }
+      .edsk .education .ed .head {
+        width: 60%;
+        background: #eece1a;
+        color: black;
+        font-weight: 600;
+        padding: 0 0.5rem;
+        align-self: center; }
   .edsk .skills {
     grid-area: skill;
     width: 80%;
@@ -353,14 +356,16 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "exp" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .edsk {
     grid-template-areas: "edu" "skill";
     grid-template-columns: 1fr;
-    margin: auto; } }
+    margin: auto; }
+    .edsk .head {
+      margin-left: 4rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

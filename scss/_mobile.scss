@@ -49,6 +49,7 @@
     grid-template-areas:
       "bioimage"
       "bio"
+      "exp"
       "job1"
       "job2"
       "job3";
@@ -64,6 +65,9 @@
       "skill";
     grid-template-columns: 1fr;
     margin: auto;
+    .head {
+      margin-left: 4rem;
+    }
   }
 }
 //education and skills
